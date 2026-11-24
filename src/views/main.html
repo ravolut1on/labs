@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <h1>Breakout</h1>
+
+    <button id="rules-btn" class="btn rules-btn">
+        Показати правила гри
+    </button>
+
+    <div id="rules" class="rules">
+        <h2>Як грати:</h2>
+
+        <p>
+            Використовуй стрілки вправо та вліво(або кнопки А та D),
+            щоб пересувати платформу та відбивати м'яч.
+        </p>
+
+        <p>
+            Розбивай блоки та набирай очки.
+            Якщо пропустиш м'яч, рахунок обнулиться.
+        </p>
+
+        <button id="close-btn" class="btn">
+            Закрити
+        </button>
+    </div>
+
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <!-- START MENU -->
+<div id="start-menu" class="game-menu">
+    <h2>Breakout</h2>
+    <p>Керування: A / D або ← / →</p>
+    <button id="start-btn" class="menu-btn">
+        ПОЧАТИ ГРУ
+    </button>
+</div>
+
+<!-- GAME OVER MENU -->
+<div id="game-over-menu" class="game-menu hidden">
+    <h2>ГРУ ЗАВЕРШЕНО</h2>
+    <p id="final-score">Ваш рахунок: 0</p>
+    <button id="retry-btn" class="menu-btn">
+        ↻ RETRY
+    </button>
+</div>
+
+    <script src="../app/index.js"></script>
+
+</body>
+</html>
